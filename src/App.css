@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+* {
+    outline: none;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'SF Pro';
+    src: local('SF Pro'), url(./fonts/SF-Pro-Display-Bold.otf) format('opentype');
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: 'SF Pro';
+    src: local('SF Pro'), url(./fonts/SF-Pro-Display-Medium.otf) format('opentype');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: local('SF Pro'), url(./fonts/SF-Pro-Display-Regular.ttf) format('ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: local('SF Pro'), url(./fonts/SF-Pro-Display-Semibold.otf) format('opentype');
+    font-weight: 600;
+}
+
+.news-section {
+    padding: 0 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

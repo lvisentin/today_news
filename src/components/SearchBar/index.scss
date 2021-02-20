@@ -1,0 +1,26 @@
+.searchbar-div {
+    max-width: 1400px;
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEEEEF;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 20px;
+    padding: 5px 10px;
+    
+    svg {
+        fill: #838388;
+    }
+
+}
+
+.searchbar-div input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEEEEF;
+    color: #838388;
+    font-family: 'SF Pro', sans-serif;
+}

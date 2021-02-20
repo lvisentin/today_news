@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import NewsList from './components/NewsList';
+import SearchBar from './components/SearchBar';
 
 function App() {
+  const [searchContent, setSearchContent] = useState();
+
+  const onChangeSearch = (searchText) => {
+    setSearchContent(searchText);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Header />
       </header>
+      <section className="news-section">
+        {/* <SourceList /> */}
+        <SearchBar search={onChangeSearch}/>
+        <NewsList searchContent={searchContent}/>
+      </section>
+
     </div>
   );
 }
